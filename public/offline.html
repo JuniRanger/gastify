@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16a34a" />
+    <title>Gastify - Sin conexión</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+        text-align: center;
+        padding: 24px;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 32px 24px;
+        max-width: 360px;
+        box-shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 4px 12px rgb(15 23 42 / 0.05);
+      }
+      .logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background: #16a34a;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+      }
+      h1 { font-size: 20px; margin: 0 0 8px; }
+      p { color: #475569; font-size: 14px; line-height: 1.5; margin: 0 0 20px; }
+      button {
+        background: #16a34a;
+        color: #fff;
+        border: 0;
+        border-radius: 10px;
+        padding: 10px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="logo">G</div>
+      <h1>Estás sin conexión</h1>
+      <p>
+        No pudimos cargar esta página. Tus movimientos guardados siguen en tu
+        dispositivo; vuelve a intentarlo cuando recuperes la conexión.
+      </p>
+      <button onclick="location.reload()">Reintentar</button>
+    </main>
+  </body>
+</html>
